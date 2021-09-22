@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MarsRover.Location.Directions;
 
 namespace MarsRover.Location
@@ -43,11 +42,6 @@ namespace MarsRover.Location
         internal Direction GetLeftOf(Direction direction)
         {
             return Directions(direction).Left;
-        }
-
-        public bool HasObstacleAt(Coordinates destination)
-        {
-            return _obstacles.Any(o => o.Includes(destination));
         }
     }
 }

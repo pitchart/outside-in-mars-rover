@@ -5,12 +5,10 @@ namespace MarsRover.Movement
 {
     internal class MoveHandler
     {
-        private readonly Map _map;
         private readonly IMovement[] _moves;
 
         public MoveHandler(Map map, params IMovement[] moves )
         {
-            _map = map;
             _moves = moves;
         }
 
