@@ -11,7 +11,7 @@ namespace MarsRover.Tests.Unit
         {
             var sequence = Sequence.Initialize(new Coordinates(0, 0), Direction.East, "FFL");
 
-            sequence.GetCommand().Should().Be('F');
+            sequence.CurrentCommand.Should().Be('F');
         }
 
         [Theory]
@@ -37,9 +37,9 @@ namespace MarsRover.Tests.Unit
         {
             var sequence = Sequence.Initialize(new Coordinates(0, 0), Direction.East, "LFFR");
 
-            var next = sequence.NextFrom(new Coordinates(0, 0), Direction.North);
+            var next = sequence.NextStep(new Coordinates(0, 0), Direction.North);
 
-            next.GetCommand().Should().Be('F');
+            next.CurrentCommand.Should().Be('F');
         }
     }
 }

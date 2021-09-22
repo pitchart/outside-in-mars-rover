@@ -13,14 +13,14 @@ namespace MarsRover.Movement
 
         public bool Supports(Sequence sequence)
         {
-            return sequence.GetCommand() == 'F';
+            return sequence.CurrentCommand == 'F';
         }
 
         public Sequence Move(Sequence sequence)
         {
             var next = _map.GetNewCoordinates(sequence.Coordinates, sequence.Direction);
 
-            return sequence.NextFrom(next, sequence.Direction);
+            return sequence.NextStep(next, sequence.Direction);
         }
     }
 }

@@ -24,7 +24,7 @@ namespace MarsRover
 
             while (!sequence.IsComplete())
             {
-                sequence = Handle(sequence);
+                sequence = Next(sequence);
             }
 
             Coordinates = sequence.Coordinates;
@@ -35,15 +35,10 @@ namespace MarsRover
 
         private string ReportPosition(Sequence sequence)
         {
-            return $"{Coordinates.X}:{Coordinates.Y}:{Direction.ToString()[0]}";
+            return $"{sequence.Coordinates.X}:{sequence.Coordinates.Y}:{sequence.Direction.ToString()[0]}";
         }
 
-        private Position Position()
-        {
-            return new Position(Coordinates, Direction);
-        }
-
-        private Sequence Handle(Sequence sequence)
+        private Sequence Next(Sequence sequence)
         {
             return _moveHandler.Handle(sequence);
         }

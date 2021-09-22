@@ -12,6 +12,8 @@ namespace MarsRover
 
         public Direction Direction => _position.Direction;
 
+        public char CurrentCommand => _commands[0];
+
         private Sequence(Position position, string commands)
         {
             _position = position;
@@ -23,9 +25,9 @@ namespace MarsRover
             return new Sequence(new Position(coordinates, direction), commands);
         }
 
-        public Sequence NextFrom(Coordinates coordinates, Direction direction)
+        public Sequence NextStep(Coordinates coordinates, Direction direction)
         {
-            return new Sequence(new Position(coordinates, direction), this.RemainingCommands());
+            return new Sequence(new Position(coordinates, direction), RemainingCommands());
         }
 
         private string RemainingCommands()
@@ -37,11 +39,5 @@ namespace MarsRover
         {
             return string.IsNullOrEmpty(_commands);
         }
-
-        public char GetCommand()
-        {
-            return this._commands[0];
-        }
-
     }
 }
