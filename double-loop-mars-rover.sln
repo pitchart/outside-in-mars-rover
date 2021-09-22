@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover", "src\MarsRover\MarsRover.csproj", "{13017BD1-9966-4038-9856-6F728C0651DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover.Tests.Unit", "tests\MarsRover.Tests.Unit\MarsRover.Tests.Unit.csproj", "{907B26E4-3C00-4B6E-AE6A-01953DBD527E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover.Tests.Acceptance", "tests\MarsRover.Tests.Acceptance\MarsRover.Tests.Acceptance.csproj", "{16E7C299-D34F-474E-8E4B-DE38DE0A2814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover.Tests.Utilities", "tests\MarsRover.Tests.Utilities\MarsRover.Tests.Utilities.csproj", "{6CFAC23B-D9FD-4DB3-B49C-99B79AC83DDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13017BD1-9966-4038-9856-6F728C0651DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13017BD1-9966-4038-9856-6F728C0651DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13017BD1-9966-4038-9856-6F728C0651DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13017BD1-9966-4038-9856-6F728C0651DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{907B26E4-3C00-4B6E-AE6A-01953DBD527E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{907B26E4-3C00-4B6E-AE6A-01953DBD527E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{907B26E4-3C00-4B6E-AE6A-01953DBD527E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{907B26E4-3C00-4B6E-AE6A-01953DBD527E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E7C299-D34F-474E-8E4B-DE38DE0A2814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E7C299-D34F-474E-8E4B-DE38DE0A2814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E7C299-D34F-474E-8E4B-DE38DE0A2814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E7C299-D34F-474E-8E4B-DE38DE0A2814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFAC23B-D9FD-4DB3-B49C-99B79AC83DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFAC23B-D9FD-4DB3-B49C-99B79AC83DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFAC23B-D9FD-4DB3-B49C-99B79AC83DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFAC23B-D9FD-4DB3-B49C-99B79AC83DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
