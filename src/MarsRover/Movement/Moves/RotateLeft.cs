@@ -1,6 +1,6 @@
 using MarsRover.Location;
 
-namespace MarsRover.Movement
+namespace MarsRover.Movement.Moves
 {
     internal class RotateLeft: IMovement
     {

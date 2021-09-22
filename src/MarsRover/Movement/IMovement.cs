@@ -1,4 +1,4 @@
-namespace MarsRover
+namespace MarsRover.Movement
 {
     internal interface IMovement
     {

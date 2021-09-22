@@ -1,5 +1,6 @@
 ﻿using MarsRover.Location;
 using MarsRover.Movement;
+using MarsRover.Movement.Moves;
 
 namespace MarsRover
 {

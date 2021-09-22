@@ -48,14 +48,14 @@
         <Compile Include="Location\Directions\West.cs" />
         <Compile Include="Location\IDirection.cs" />
         <Compile Include="Location\Position.cs" />
-        <Compile Include="Movement\GoForward.cs" />
         <Compile Include="Movement\IMovement.cs" />
         <Compile Include="Movement\MoveHandler.cs" />
-        <Compile Include="Movement\RotateLeft.cs" />
-        <Compile Include="Movement\RotateRight.cs" />
+        <Compile Include="Movement\Moves\GoForward.cs" />
+        <Compile Include="Movement\Moves\RotateLeft.cs" />
+        <Compile Include="Movement\Moves\RotateRight.cs" />
+        <Compile Include="Movement\Sequence.cs" />
         <Compile Include="Rover.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="Sequence.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,5 +1,6 @@
 using FluentAssertions;
 using MarsRover.Location;
+using MarsRover.Movement;
 using Xunit;
 
 namespace MarsRover.Tests.Unit

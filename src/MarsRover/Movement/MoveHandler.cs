@@ -1,8 +1,7 @@
-using System;
 using System.Linq;
 using MarsRover.Location;
 
-namespace MarsRover
+namespace MarsRover.Movement
 {
     internal class MoveHandler
     {
