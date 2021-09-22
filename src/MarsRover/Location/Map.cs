@@ -7,13 +7,11 @@ namespace MarsRover.Location
     {
         private readonly Coordinates _minCoordinates;
         private readonly Coordinates _maxCoordinates;
-        private readonly List<IObstacle> _obstacles;
 
-        public Map(Coordinates minCoordinates, Coordinates maxCoordinates, List<IObstacle> obstacles)
+        public Map(Coordinates minCoordinates, Coordinates maxCoordinates)
         {
             _minCoordinates = minCoordinates;
             _maxCoordinates = maxCoordinates;
-            _obstacles = obstacles;
         }
 
         private readonly IDictionary<Direction, IDirection> _directions = new Dictionary<Direction, IDirection>
@@ -24,7 +22,7 @@ namespace MarsRover.Location
             { Direction.East, new East() }
         };
 
-        internal Coordinates GetNewCoordinates(Coordinates coordinates, Direction direction)
+        internal Coordinates GetDestination(Coordinates coordinates, Direction direction)
         {
             return Directions(direction).GoForward(coordinates, _minCoordinates, _maxCoordinates);
         }

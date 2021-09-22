@@ -38,7 +38,6 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Location\IObstacle.cs" />
         <Compile Include="Location\Map.cs" />
         <Compile Include="Location\Coordinates.cs" />
         <Compile Include="Location\Direction.cs" />

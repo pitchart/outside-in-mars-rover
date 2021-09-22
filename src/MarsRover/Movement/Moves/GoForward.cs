@@ -18,7 +18,7 @@ namespace MarsRover.Movement.Moves
 
         public Sequence Move(Sequence sequence)
         {
-            var next = _map.GetNewCoordinates(sequence.Coordinates, sequence.Direction);
+            var next = _map.GetDestination(sequence.Coordinates, sequence.Direction);
 
             return sequence.NextStep(next, sequence.Direction);
         }

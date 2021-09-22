@@ -8,7 +8,6 @@ namespace MarsRover.Tests.Utilities.Builder
         private Coordinates _min;
 
         private Coordinates _max;
-        private List<IObstacle> _obstacles = new List<IObstacle>();
 
         private MapBuilder(Coordinates min, Coordinates max)
         {
@@ -28,7 +27,7 @@ namespace MarsRover.Tests.Utilities.Builder
 
         public Map Build()
         {
-            return new Map(this._min, this._max, _obstacles);
+            return new Map(this._min, this._max);
         }
 
         //public MapBuilder WithObstacleAt(int x, int y)
